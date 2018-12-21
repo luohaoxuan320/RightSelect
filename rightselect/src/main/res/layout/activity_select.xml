@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lehow.rightselect.RightSelectActivity"
+    >
+  <android.support.v4.widget.DrawerLayout
+      android:id="@+id/drawer_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+      <!--<Button
+          android:padding="16dp"
+          android:text="NavigationView在Toolbar下方"
+          android:onClick="btnClick"
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <Button
+          android:id="@+id/button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="选择性别"
+          android:onClick="btnSex"
+          />
+      <Button
+          android:id="@+id/button2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="选择年龄"
+          android:onClick="btnAge"
+          />
+      <Button
+          android:id="@+id/button3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="不知道该选择啥了"
+          android:onClick="btnNull"
+          />-->
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:minWidth="60dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_gravity="right"
+        android:background="#f00"
+        >
+      <android.support.v7.widget.RecyclerView
+          android:background="#f0f"
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          ></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+  </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
